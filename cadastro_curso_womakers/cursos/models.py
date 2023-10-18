@@ -5,7 +5,7 @@ class Curso(models.Model):
     niveis_de_curso = (
         ('Iniciante', 'Iniciante'),
         ('Intermediário', 'Intermediário'),
-        ('Avançado', 'Avançado') # fixed the tuple index
+        ('Avançado', 'Avançado') 
     )    
     titulo = models.CharField(max_length=50)
     nivel = models.CharField(max_length=50, choices=niveis_de_curso) # fixed the parenthesis
